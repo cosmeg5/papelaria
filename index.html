@@ -15,21 +15,55 @@
 
     <!-- Estilos customizados para esse template -->
     <link href="pricing.css" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: pepper;
+        src: url('./font/pepper-1.woff2');
+      }
+      .font-externa {
+        font-family: pepper;
+        color: #8b82eb;
+      }
+      @media (min-width: 768px) {
+        .navbar-nav {
+          width: 100%;
+          text-align: center;
+        }
+        .navbar-nav > li {
+          float: none;
+          display: inline-block;
+        }
+        .navbar-nav > li.navbar-right {
+          float: right !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
-
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color: #aaa;">
-      <div><img src="./img/logo.png" width="150px" /></div>
-      <h1 class="my-6 mr-md-auto" style="margin-left: 20px; font-family:monospace">Papelaria WPW</h1>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#preco">Preços</a>
-        <a class="p-2 text-dark" href="#localizacao">Localização</a>
-        <a class="p-2 text-dark" href="#contato">Contato</a>
-      </nav>
-    </div>
-
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg bg-light text-uppercase" id="mainNav">
+  <div class="container">
+      <a class="navbar-brand" href="#page-top"></a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="container d-flex align-items-left flex-column">
+        <img src="./img/logoatual.png" width="300px" />
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Home</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#preco">Preço</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#localizacao">Localização</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contato</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>    
+<header class="masthead text-white text-center">
+</header> 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="preco">
       <h1 class="display-4">Preços</h1>
       <h3 class="lead">OFERTAS IMPERDÍVEIS PARA VOLTA ÀS AULAS! </h3>
